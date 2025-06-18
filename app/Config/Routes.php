@@ -9,6 +9,8 @@ use CodeIgniter\Router\RouteCollection;
 // Home default
 $routes->get("/", "Home::index");
 
+$routes->resource('dosen');
+
 // Mahasiswa
 $routes->get("mahasiswa/showName/(:any)", 'Mahasiswa::showName/$1');
 $routes->get("mahasiswa/(:segment)", 'Mahasiswa::show/$1');
